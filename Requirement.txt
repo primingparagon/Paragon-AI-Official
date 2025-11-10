@@ -1,0 +1,4 @@
+# File name: requirements.txt
+
+fastapi
+uvicorn
