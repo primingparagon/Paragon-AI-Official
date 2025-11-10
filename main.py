@@ -35,7 +35,7 @@ class ChatRequest(BaseModel):
 # --- Your Root Endpoint (No Change) ---
 @app.get("/")
 def read_root():
-    return {"message": "Paradox AI backend is live."}
+    return {"message": "Paragon AI backend is live."}
 
 # --- NEW: Your Chat Endpoint ---
 # This creates a "POST" endpoint that listens at /chat
@@ -47,7 +47,7 @@ def handle_chat(request: ChatRequest):
     # --- TODO: AI Logic Goes Here ---
     # For now, we'll just send a simple response back
     
-    ai_response = f"Backend received your message: '{user_message}'. We are not yet connected to an LLM."
+    ai_response = f"Backend received your message: '{user_message}'. Paragon AI is not yet connected to an LLM."
     
     # Send the response back as JSON
     return {"reply": ai_response}
